@@ -1,10 +1,5 @@
 pipeline {
-  agent {
-    node {
-      label 'Node1'
-    }
-
-  }
+  agent none
   stages {
     stage('File Generation') {
       steps {
