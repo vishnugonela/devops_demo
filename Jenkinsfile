@@ -15,6 +15,7 @@ pipeline {
 
     stage('Building Image') {
       steps {
+        retry(count: 1)
         sh 'docker build -t myimage .'
       }
     }
