@@ -22,7 +22,7 @@ pipeline {
 
     stage('Verify images') {
       steps {
-        sh 'docker images | grep muimage'
+        sh 'docker images | grep myimage'
       }
     }
 
